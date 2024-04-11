@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgba(0, 0, 255, 0.464);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Iniciando estudos DOM </h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <div class="msg">Clique em mim 2.0</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] //Selecionando o PARAGRAFO
+
+        document.write(p1.innerHTML)
+        window.document // Imprimindo na tela o Paragrafo selecionado
+
+        p1.style.color= 'red' // Mudando de cor o P selecionado
+
+        var d = window.document.getElementById('msg') // Seleciondo por ID a DIV 
+        d.style.background = 'green' // Mudando a cor da DIV
+
+        var msg = window.document.querySelector('div.msg') //Selecioando a DIV e guardando dentro da variavel MSG 
+
+        msg.style.background = 'red'//Alterando a cor da div selecionada
+    </script>
+</body>
+</html>
