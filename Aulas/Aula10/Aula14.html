@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>De qual pais você é ?</h1>
+    <p>Digite o Nome do seu pais de origem!</p>
+    <input type="text" name="txt1" id="txt1">
+    <input type="button" value="Confirme" onclick="confirme()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function confirme(){
+            var txt = window.document.getElementById('txt1').value;
+            var res =  window.document.getElementById('res');
+            txt.toUpperCase()
+            const txtM = txt.toUpperCase();
+            if(txtM == 'BRASIL'){
+                res.innerHTML += `Você é Brasileiro!`
+            } else{
+                res.innerHTML += `Você é estrangeiro`
+            }
+        }
+            
+ 
+        
+
+    </script>
+</body>
+</html>
