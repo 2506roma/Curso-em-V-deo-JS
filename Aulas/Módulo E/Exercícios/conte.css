@@ -1,0 +1,30 @@
+body{
+    background-color: cadetblue;
+}
+h1{
+    text-align: center;
+}
+section{
+    border: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    width: 500px;
+    height: auto;
+    margin: auto;
+    box-shadow: 3px 5px 10px black;
+    display: flex;
+}
+#res, #inputs{
+   flex: 2;
+   padding: 10px;
+    
+}
+
+input{
+    display: block;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+}
