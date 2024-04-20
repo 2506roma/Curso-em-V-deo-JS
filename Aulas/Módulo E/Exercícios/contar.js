@@ -21,8 +21,8 @@ function contar(){
              res.innerHTML += i +' , '
          }
      }else if (inicio >= fim){
-        for(var i = inicio; i >= fim; i = passo - i){
-            res.innerHTML += i + ' , '
+        for (var i = inicio; i >= fim; i -= passo) {
+            res.innerHTML += i + ' , ';
         }
      }
 
