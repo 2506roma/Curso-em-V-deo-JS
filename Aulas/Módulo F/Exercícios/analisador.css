@@ -1,0 +1,31 @@
+body{
+    background-color: rgba(47, 172, 255, 0.324);
+}
+h1{
+    text-align: center;
+    color: rgb(0, 145, 255);
+}
+section{
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    height: auto;
+    box-shadow: 3px 5px 10px black;
+}
+select{
+    width: 200px;
+    margin: 10px;
+}
+p{
+    margin-bottom: 0%;
+    font-size: larger;
+}
+
+#soma{
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+}

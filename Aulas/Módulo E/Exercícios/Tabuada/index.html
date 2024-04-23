@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabuada.css">
+    <title>Tabuada</title>
+    
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <section>
+        <div id="insert">
+            Número: <input type="number" name="ntxt" id="ntxt">
+            <input type="button" value="Gerar tabuada" onclick="gerar()">
+        </div>
+        <div>
+            <select id="resultado" multiple size="10">
+
+            </select>
+        </div>
+    </section>
+    
+    <script>
+        function gerar (){
+            var numero = Number(document.getElementById("ntxt").value)
+            var res = window.document.getElementById("resultado")
+            res.innerHTML = " "
+
+            if (numero == " "){
+                window.alert("Digite um Número para continuar")
+                return
+            }
+            for(var i = 1; i <= 10; i++){
+                var option = document.createElement("option")
+                option.text = (numero + " * " + i + " = " + ( numero * i)) 
+                res.add(option)
+            }
+            
+        }
+    </script>
+
+</body>
+</html>

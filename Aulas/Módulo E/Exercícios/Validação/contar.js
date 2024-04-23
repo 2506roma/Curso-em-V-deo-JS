@@ -11,13 +11,23 @@ function contar(){
      
     
      res.innerHTML = ''
+     if(inicio == 0){
+        window.alert('Impossivel contar')
+     }
 
      if (passo == 0){
-         res.innerHTML = "O Valor de passo não deve ser Zero"
-         return;
-     }
-    if (inicio <= fim ){
-         for (var i = inicio; i <= fim ; i = passo + i){
+        
+        res.innerHTML = "O valor de passos não deve ser 0, considerando passo 1 <br>"
+
+        
+        
+        for (var i = inicio; i <= fim ; i += passo){
+            passo = 1
+            res.innerHTML += i +' , '
+        }
+         
+     } else if (inicio <= fim ){
+         for (var i = inicio; i <= fim ; i += passo){
              res.innerHTML += i +' , '
          }
      }else if (inicio >= fim){

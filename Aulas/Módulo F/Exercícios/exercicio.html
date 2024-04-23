@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="analisador.css">
+    <title>Analisandor de números</title>
+</head>
+<body>
+    <h1>Analisador de Números</h1>
+    <section>
+        <div>
+            Número (entre 1 e 100): <input type="number" name="ntxt" id="ntxt">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+        </div>
+        <div id="res">
+            <p>Números adicionados:</p>
+            <select name="stxt" id="stxt" size="10"></select>
+            <input id="btfinalizar" type="button" value="Finalizar" onclick="finalizar()">
+            <input id="clear" type="button" value="Limpar" onclick="limpar()">
+        </div>
+        <div id="soma">
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Romário</p>
+    </footer>
+    <script src="analisador.js"></script>
+</body>
+</html>
