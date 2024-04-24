@@ -11,16 +11,21 @@ function adicionar(){
     if (n > 100 || n < 1 || n == " "|| comp >= 0){
         window.alert('Digite um número entre 1 e 100')
     }else{
+        soma += n
         num.push(n)        
-        window.document.getElementById('ntxt').value = ' '  
         res.innerHTML = ""
-        soma += n 
+         
+
         for (var i in num){
-            soma1 = soma1 + 1
+            soma1 ++
+            window.alert(`${soma1}`)
+            
             var option = document.createElement("option")
             option.text = (`Valor add ${num[i]}`)
             res.add(option) 
-        
+
+            window.document.getElementById('ntxt').value = ' '  
+
         }   
     }
        
